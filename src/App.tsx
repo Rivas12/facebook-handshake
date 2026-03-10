@@ -100,7 +100,7 @@ function App() {
                   </p>
                   <p>
                     <strong>Access Token:</strong>{' '}
-                    <code>{authStatus.authResponse.accessToken.substring(0, 20)}...</code>
+                    <code>{authStatus.authResponse.accessToken}</code>
                   </p>
                 </>
               )}
