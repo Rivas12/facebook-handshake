@@ -173,56 +173,8 @@ function App() {
             ))
           )}
         </div>
-<<<<<<< HEAD
       </section>
     </main>
-=======
-      </div>
-
-      {isInitialized && (
-        <div className="status-card">
-          <h2>Status da Autenticação</h2>
-          {authStatus ? (
-            <>
-              <p>
-                <strong>Status:</strong> {authStatus.status}
-              </p>
-              {authStatus.authResponse && (
-                <>
-                  <p>
-                    <strong>User ID:</strong> {authStatus.authResponse.userID}
-                  </p>
-                  <p>
-                    <strong>Access Token:</strong>{' '}
-                    <code>{authStatus.authResponse.accessToken}</code>
-                  </p>
-                </>
-              )}
-            </>
-          ) : (
-            <p>Verificando status...</p>
-          )}
-
-          {authStatus?.status !== 'connected' && (
-            <button onClick={handleLogin} disabled={loading} className="login-button">
-              {loading ? 'Conectando...' : 'Conectar com Facebook'}
-            </button>
-          )}
-        </div>
-      )}
-
-      <div className="info-card">
-        <h3>📝 Configuração</h3>
-        <p>
-          Configure suas variáveis de ambiente no arquivo <code>.env</code>:
-        </p>
-        <pre>
-{`VITE_FACEBOOK_APP_ID=seu-app-id
-VITE_FACEBOOK_API_VERSION=v18.0`}
-        </pre>
-      </div>
-    </div>
->>>>>>> 988d92af0b878b801ac235efc2f9f7e9186a8d7f
   );
 }
 
